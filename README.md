@@ -16,3 +16,6 @@ A typical user of this app would be looking for the following:
 The mock-ups I used for planning the application are in a "wireFrames" folder inside my images folder under the names **ProjectWireframe_1.png** , **ProjectWireframe_2.png** , **ProjectWireframe_3.png** , **ProjectWireframe_4.png** , **ProjectWireframe_5.png** and **ProjectWireframe_6.png**
 
 My database schema can be found in the "database-schema" folder inside my images folder as **dbschema.png**.  I created my database in dbdiagram.io.  
+
+
+[![Build Status](https://travis-ci.org/jeffoneilldev/invitations-django-project.svg?branch=master)](https://travis-ci.org/jeffoneilldev/invitations-django-project)
