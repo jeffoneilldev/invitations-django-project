@@ -1,5 +1,14 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, HttpResponse
 
-def index(request):
-    return HttpResponse('<h1>Hi There!</h1>')
+# Create your views here.
+def say_hello(request):
+    #testing view
+    return HttpResponse("Hi There!")
+    
+def goto_home_page(request):
+    #bring user to home page
+    return render (request, "index.html")
+    
+def about_page(request):
+    #bring user to about page
+    return render (request, "about.html")
