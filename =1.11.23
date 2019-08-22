@@ -1,0 +1,2 @@
+Requirement already satisfied: django in /home/ubuntu/.virtualenvs/venv/lib/python3.6/site-packages (1.11)
+Requirement already satisfied: pytz in /home/ubuntu/.virtualenvs/venv/lib/python3.6/site-packages (from django) (2017.3)
