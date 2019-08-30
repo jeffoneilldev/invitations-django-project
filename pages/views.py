@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect, reverse
-from django.contrib import auth
+from django.contrib import auth, messages
+from pages.forms import UserLoginForm
 
 # Create your views here.
 def say_hello(request):
@@ -17,4 +18,10 @@ def about_page(request):
 def logout(request):
     #log user out
     auth.logout(request)
+    messages.success(request, "You have been logged out!")
     return redirect(reverse('index'))
+    
+def login(request):
+    """Show login page"""
+    login_form = UserLoginForm()
+    return render(request, 'login.html', {"login_form":login_form})
