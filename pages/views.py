@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect, reverse
 from django.contrib import auth, messages
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from pages.forms import UserLoginForm, UserRegistrationForm
 
@@ -72,4 +73,9 @@ def registration(request):
     return render(request, 'registration.html', {
         "registration_form": registration_form})
     
+
+def customer_profile(request):
+    """Customer profile page"""
     
+    user = User.objects.get(email=request.user.email)
+    return render(request, 'profile.html', {"profile": user})
