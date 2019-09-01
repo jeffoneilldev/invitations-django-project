@@ -26,6 +26,13 @@
             <li><a href="{% url 'login' %}">Login</a></li>
             <li><a href="{% url 'registration' %}">Register</a></li>
             {% endif %}
+            <li><a href="{% url 'view_cart' %}">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                {% if product_count > 0 %}
+                <label class="badge badge-warning">{{ product_count }}</label>
+                {% endif %}
+                </a>
+            </li>
         </ul>
     </nav>
 

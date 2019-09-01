@@ -13,17 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import url, include
 from django.contrib import admin
-from django.conf.urls import url
-from pages.views import index, about_page, logout, login, registration, customer_profile
+from pages import urls as urls_pages
+from products import urls as urls_products
+from cart import urls as urls_cart
+from products.views import all_products
+from django.views import static
+from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index, name="index"),
-    url(r'^about$', about_page, name="about_page"),
-    url(r'^pages/logout/$', logout, name="logout"),
-    url(r'^pages/login/$', login, name="login"),
-    url(r'^pages/register/$', registration, name="registration"),
-    url(r'^accounts/profile/$', customer_profile, name="profile")
+    url(r'^$', all_products, name='index'),
+    url(r'^pages/', include(urls_pages)),
+    url(r'^products/', include(urls_products)),
+    url(r'^cart/', include(urls_cart)),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
-
