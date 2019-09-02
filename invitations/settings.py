@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'invitations.wsgi.application'
 
 if "DATABASE_URL" in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse("postgres://desjucafszfbkw:d42673f85fa57fbd40832021b43c7ff4085994e428c6c71cd38cf587760d82b7@ec2-46-137-187-23.eu-west-1.compute.amazonaws.com:5432/d4o5l3vg3eiaih")
     }
 else:
     print("Postgres URL not found, using sqlite instead")
