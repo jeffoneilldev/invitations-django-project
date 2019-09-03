@@ -70,7 +70,7 @@
 <h1>{% block page_heading %} {% endblock %}</h1>
 
     {% if messages %}
-    <div>
+    <div class="alert alert-success" role="alert" align="center">
         {% for message in messages %} 
         {{ message }} 
         {% endfor %}

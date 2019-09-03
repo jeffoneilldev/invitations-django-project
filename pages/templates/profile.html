@@ -1,10 +1,12 @@
 {% extends 'base.html' %} 
 {% block page_title %}Customer profile Page{% endblock %} 
-{% block page_heading %} {{ user }}'s Profile{% endblock %}
 
 {% block content %}
+<div class="container" align="center">
+<h1>{{ user }}'s Profile</h1><hr>
 
 <p>Username: {{ profile.username }}</p>
 <p>Email: {{ profile.email }}</p>
-
+</div>
+<br><br>
 {% endblock %}
