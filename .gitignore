@@ -1,5 +1,1 @@
-*.pyc
-env.py
-*.sqlite3
-=1.11.23
-__pycache__/
+*__pycache__/
