@@ -24,7 +24,7 @@
                         <div class="input-group">
                             <div class="input-group-addon">Qty&nbsp</div>
                             <input name="quantity" type="number" min="0" max="999" class="form-control">
-                            <div class="input-group-addon">&nbsp(Currently: {{item.quantity}})&nbsp&nbsp&nbsp</div>
+                            <div class="input-group-addon">&nbsp(Current Qty: {{item.quantity}})&nbsp&nbsp&nbsp</div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Update</button>
@@ -38,7 +38,7 @@
 <div class="row">
     <p>Your total amount is  €</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}&nbsp&nbsp&nbsp</p>
-    <a href="/" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout Now!</a>
+    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout Now!</a>
 </div>
 </div><br><br>
 
