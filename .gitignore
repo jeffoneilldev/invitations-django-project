@@ -4,3 +4,4 @@ env.py
 *.pyc
 *.c9/
 env.py
+.c9/metadata/tab5
