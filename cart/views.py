@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, reverse
+from django.contrib.auth.decorators import login_required
 
 # My shopping cart views...
 
+@login_required
 def view_cart(request):
     """Shows contents of the cart page"""
     return render(request, "cart.html")
