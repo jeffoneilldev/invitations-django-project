@@ -3,5 +3,6 @@ env.py
 =1.11.23
 *.pyc
 *.c9/
+*~.c9/
 env.py
 .c9/metadata/tab5
