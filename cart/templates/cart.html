@@ -34,10 +34,13 @@
     </div>
     {% endfor %}
 </div>
+<br>
 <hr>
+<br><br>
 <div class="row">
     <p>Your total amount is  €</p>
     <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}&nbsp&nbsp&nbsp</p>
+    <a href="{% url 'products' %}" class="btn btn-warning" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Continue Shopping?</a>&nbsp&nbsp&nbsp
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout Now!</a>
 </div>
 </div><br><br>
