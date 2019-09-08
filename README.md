@@ -54,12 +54,13 @@ This layout is fully responsive on mobile, medium and large screens.
 **Testing as per user stories above:**
 
 - **User story 1:**  Landing on the "Home" page for the first time, the inexperienced user can navigate the page easily because of the simple layout and obvious options available.
-- **User story 2:**  The novice in the kitchen will find the ingredients and full cooking procedure to whatever recipe they select.
-- **User story 3:**  The regular user can sign in to the app for full access to it's features, including adding their own recipes, editing current recipes or deleting any recipe from the app.
-- **User story 4:**  The chef looking for recipe ideas can filter their selections by selecting a cuisine type and/or vegetarian or meaty recipes.  The result of their selection will appear on screen and if they want to see the full details of their selected recipe, they can select the "View Recipe" button.
+- **User story 2:**  The bride or groom will instantly see a carousel with positive comments and images about the website.
+- **User story 3:**  The returning user can log in to their account and access all the features of the website securely.  They can also view their customer profile while logged in.
+- **User story 4:**  This user can go straight to the "About us" page for further information and an email address they can contact.
 
 **Other Testing...**
 
+- Continuos testing using Travis.  This build is "Passing".
 - All buttons and links have been tested and they all go to their desired destinations.
 - Made sure that product, cart and checkout pages are restricted to logged in users only.
 - The "User Registration" form works as it should.  When the user enters their details, they are brought to the products page. 
