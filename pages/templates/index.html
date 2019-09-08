@@ -4,59 +4,50 @@
 {% block content %}
 
 <div class="container" align="center">
-<h1>Welcome to "Your Wedding Invitations"</h1><br>
-<h4>The search for your wedding invitations is over!</h4>  
-<p>Check out our designs in all shapes and sizes and experience our quality service now.</p>
 
-<br><hr><br>
-
-
-  <div class="row">
-    <!-- Design 1 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="../media/img/wedding1.jpeg" class="card-img-top" alt="WeddingDesign1">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Great Designs</h5>
-          <div class="card-text text-black-50">Huge Selection</div>
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('../media/img/wedding1.jpeg')" alt="WeddingDesign1">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">Great Designs</h3>
+          <p class="lead">Loads of designs to choose from.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('../media/img/wedding2.jpeg')" alt="WeddingDesign2">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">Best Prices</h3>
+          <p class="lead">We provide the best service for your money.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('../media/img/wedding3.jpeg')" alt="WeddingDesign3">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4">Your Wedding</h3>
+          <p class="lead">We'll make your invitations perfect in every way.</p>
         </div>
       </div>
     </div>
-    <!-- Design 2 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="../media/img/wedding2.jpeg" class="card-img-top" alt="WeddingDesign2">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Best Prices</h5>
-          <div class="card-text text-black-50">Very Affordable</div>
-        </div>
-      </div>
-    </div>
-    <!-- Design 3 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="../media/img/wedding3.jpeg" class="card-img-top" alt="WeddingDesign3">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Excellent Service</h5>
-          <div class="card-text text-black-50">Top Customer Care</div>
-        </div>
-      </div>
-    </div>
-    <!-- Design 4 -->
-    <div class="col-xl-3 col-md-6 mb-4">
-      <div class="card border-0 shadow">
-        <img src="../media/img/wedding4.jpeg" class="card-img-top" alt="WeddingDesign4">
-        <div class="card-body text-center">
-          <h5 class="card-title mb-0">Your Wedding</h5>
-          <div class="card-text text-black-50">Perfect!</div>
-        </div>
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
   </div>
-  <!-- /.row -->
+</header>
 
 </div>
-<!-- /.container -->
-<br><br><br>
+<br><br>
+  
 
 {% endblock %}
