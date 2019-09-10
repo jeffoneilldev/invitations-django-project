@@ -3,11 +3,7 @@ body {
     padding-top: 100px;
 }
 
-.carousel-caption {
-    background-color: white;
-    opacity: 0.8;
-}
-
+/* Product display styles */
 .product {
     background-size: contain;
     background-position: center center;
@@ -25,19 +21,21 @@ body {
 
 .panel-default {
     border-color: transparent;
-    padding: 20px 10px;
+    padding: 25px 25px;
 }
 
 .panel-body {
     height: 100%;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 20px;
 }
 
 .product-description {
     min-height: 40px;
 }
 
+
+/* Styles for carousel on home page */
 .carousel-item {
   height: 40vh;
   min-height: 350px;
@@ -48,9 +46,24 @@ body {
   background-size: cover;
 }
 
+.carousel-caption {
+    background-color: white;
+    opacity: 0.8;
+}
+
+
+/* Page headings */
 .display-4 {
     color: black;
-    font-family: impact;
+    font-family: script;
+    font-size: 40px;
+}
+
+
+/* Splash banner display */
+.display-5 {
+    color: white;
+    font-family: script;
 }
 
 .lead {

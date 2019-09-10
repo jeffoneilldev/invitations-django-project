@@ -6,18 +6,21 @@
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
     //<![CDATA[
-        Stripe.publishableKey = '{{ publishable }}';
+    Stripe.publishableKey = '{{ publishable }}';
     //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-{% endblock %}
+{% endblock %} 
 
 {% block content %}
+
 <div class="container" align="center">
-<h1>Checkout</h1><br><hr><br>
-<div class="row row-flex">
-    {% for item in cart_items %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+    <h1 class="display-4">Checkout</h1><br>
+    <hr><br>
+    <div class="row row-flex">
+        
+        {% for item in cart_items %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow">
             <div class="panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div><br>
 
@@ -29,34 +32,35 @@
                 </div>
             </div>
         </div>
-    {% endfor %}
-</div>
-<br><br>
-<div class="row col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 alert alert-success">
-    <p>Your total amount:  €</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-</div><br><hr><br>
-
-<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend>Payment Details</legend>
-
-    <div id="credit-card-errors" style="display: none;">
-        <div id="alert-message block-message error" id="stripe-error-message"></div>
+        {% endfor %}
     </div>
+    <br><br>
+    <div class="row col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 alert alert-success">
+        <p>Your total amount: €</p>
+        <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+    </div><br>
+    <hr><br>
 
-    <div class="form-group col-md-6">
-        {{ order_form | as_bootstrap }}
-    </div>
+    <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+        <legend>Payment Details</legend>
 
-    <div class="form-group col-md-6">
-        {{ payment_form | as_bootstrap }}
-    </div>
+        <div id="credit-card-errors" style="display: none;">
+            <div id="alert-message block-message error" id="stripe-error-message"></div>
+        </div>
 
-    {% csrf_token %}
-    <div class="form-group col-md-12">
-        <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
-    </div>
-</form>
+        <div class="form-group col-md-6">
+            {{ order_form | as_bootstrap }}
+        </div>
+
+        <div class="form-group col-md-6">
+            {{ payment_form | as_bootstrap }}
+        </div>
+
+        {% csrf_token %}
+        <div class="form-group col-md-12">
+            <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+        </div>
+    </form>
 </div>
 <br><br>
 

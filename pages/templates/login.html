@@ -7,14 +7,13 @@
 {% block content %}
 
 <div class="container" align="center">
-<h1>User Login</h1>
-<p>Please log in to view our products and access our online store.</p><br>
+    <h2 class="display-4">User Login</h2>
+    <p>Please log in to view our products and access our online store.</p><br>
 
     <form method="POST" align="left">
-        {% csrf_token %} 
-        {{ login_form | as_bootstrap }}
+        {% csrf_token %} {{ login_form | as_bootstrap }}
         <button type="submit" class="btn btn-success">Login</button>
     </form>
-    <br><br>
+    <br><br><br><br>
     
 {% endblock %}

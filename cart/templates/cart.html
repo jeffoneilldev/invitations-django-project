@@ -4,46 +4,47 @@
 
 {% block content %}
 <div class="container" align="center">
-<div class="row row-flex">
-    {% for item in cart_items %}
-    
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-        
-        <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-        <br>
-        <div class="caption">
-            <h3>{{ item.product.name }}</h3>
-            <p class="product-description">{{ item.product.description }}</p>
-            <p>€{{ item.product.price }} each</p>
-            <p>
-                
-                <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <label for="exampleInputAmount" class="sr-only">Quantity</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">Qty&nbsp</div>
-                            <input name="quantity" type="number" min="0" max="999" class="form-control">
-                            <div class="input-group-addon">&nbsp(Current Qty: {{item.quantity}})&nbsp&nbsp&nbsp</div>
+    <div class="row row-flex">
+        {% for item in cart_items %}
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow">
+
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+            <br>
+            <div class="caption">
+                <h3>{{ item.product.name }}</h3>
+                <p class="product-description">{{ item.product.description }}</p>
+                <p>€{{ item.product.price }} each</p>
+                <p>
+
+                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleInputAmount" class="sr-only">Quantity</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">Qty&nbsp</div>
+                                <input name="quantity" type="number" min="0" max="999" class="form-control">
+                                <div class="input-group-addon">&nbsp(Current Qty: {{item.quantity}})&nbsp&nbsp&nbsp</div>
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Update</button>
-                </form>
-            </p>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </p>
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
-<br>
-<hr>
-<br><br>
-<div class="row">
-    <p>Your total amount is  €</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}&nbsp&nbsp&nbsp</p></div>
-<div class="row">
-    <a href="{% url 'products' %}" class="btn btn-warning" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Continue Shopping?</a>&nbsp&nbsp&nbsp
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout Now!</a>
-</div>
+    <br>
+    <hr>
+    <br><br>
+    <div class="row">
+        <p>Your total amount is €</p>
+        <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}&nbsp&nbsp&nbsp</p>
+    </div>
+    <div class="row">
+        <a href="{% url 'products' %}" class="btn btn-warning" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Continue Shopping?</a>&nbsp&nbsp&nbsp
+        <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout Now!</a>
+    </div>
 </div><br><br>
 
 {% endblock %}

@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <div class="container" align="center">
-<h1>Our Invitations...</h1><br>
+<h2 class="display-4">Choose Your Invitation.</h2><br>
 <div class="row row-flex">
     {% for product in products %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow">
             <div class="panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div><br>
 
@@ -28,4 +29,5 @@
 </div>
 </div>
 <br><br>
+
 {% endblock %}

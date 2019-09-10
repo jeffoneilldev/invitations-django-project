@@ -46,6 +46,10 @@ This layout is fully responsive on mobile, medium and large screens.
 - HTML & CSS for template creation
 
 ## Testing
+
+### Travis
+I connected my Github repository to Travis for continuos testing.  Whenever my code updated, a new build would begin in Travis and turn green if my code passes all tests.  The Travis link at the end of this README displays the current testing status of my app.  This current build is "Passing".
+
 ### Code Validation
 - HTML 
 - CSS 
@@ -60,7 +64,6 @@ This layout is fully responsive on mobile, medium and large screens.
 
 **Other Testing...**
 
-- Continuos testing using Travis.  This build is "Passing".
 - All buttons and links have been tested and they all go to their desired destinations.
 - Made sure that product, cart and checkout pages are restricted to logged in users only.
 - The "User Registration" form works as it should.  When the user enters their details, they are brought to the products page. 
@@ -69,20 +72,22 @@ This layout is fully responsive on mobile, medium and large screens.
 - Python debugger for function testing in the console: when trying to figure out what was being inputted and retrieved to and from my functions I used print() etc
 
 ## Deployment
-This app was developed in AWS Cloud 9.  I used git version control and kept all records of my app in my Github repository.  Before deploying, I made sure to switch my **debug** value to **False** in settings.py.
+This app was developed in AWS Cloud 9.  I used git version control and kept all records of my app in my Github repository.  Before deploying, I make sure to switch my **debug** value to **False** in settings.py.
 
 I took the following steps to deploy my project using **Heroku**:
 - Logged in and created a new app called **invitations-django-project**
+- 
 
 ## Credits
 ### Content
 Bootstrap "Small Business" Theme
 
 ### Media
-Invitation images from **www..com, .com, .com, www..com, www..com**
-Home Page images from **www.com**
+Invitation images from **https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR_tIoCOlskiyQXfTwCs9rQyfC41xRCTnhacUzakYqzGl0Rl3Z, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDzwDtDB5HL6C3Y-M0CCFNp3jwQxZiDv0mppAY-Hbf-s5ZyMg, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVChEqUYRpD8p2Z5Q-6Sp9P0Hcm5YCaFZeprln5l2I6C0C6aD&reload=on, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDzwDtDB5HL6C3Y-M0CCFNp3jwQxZiDv0mppAY-Hbf-s5ZyMg, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDDsXKAGsXG9rBCCjQM7t0jBhoW3_FZZcDJKMV0ZgoEVeRnpQ**
+Page header image from **https://www.weddinginvitations.org.uk/wp-content/uploads/2016/07/montage.jpg, https://www.google.com/**
+Carousel images from **http://cadldg.com/wp-content/uploads/2019/01/photo-collage-thank-you-cards-wedding-multi-card-personalized-template-thanks-for-invitation-online.jpg**, https://junebugweddings.com/wedding-blog/wp-content/uploads/2014/12/American-Wedding-Marketplace-Invitation-Collage.jpg**, https://i.pinimg.com/originals/a4/50/7d/a4507d7a26566dc7a792a5f0442858b5.jpg**
 To create my database schema, I used **dbdiagram.io**
-To create my wireframes I used ****
+To create my wireframes I used **balsamiq**
 
 ### Acknowledgements
 w3schools.com  
