@@ -13,9 +13,9 @@ A typical user of this app would be looking for the following:
 4. **A user looking for further information** will be looking for information about the company and an option to submit a query.
 
 ### Mock-ups and Database Schema
-The mock-ups I used for planning the application are in a "wireFrames" folder inside my images folder under the names **ProjectWireframe_1.png** , **ProjectWireframe_2.png** , **ProjectWireframe_3.png** , **ProjectWireframe_4.png** , **ProjectWireframe_5.png** and **ProjectWireframe_6.png**
+The mock-ups I used for planning the application are in my "projectPlan" folder inside my 'static' folder under the names **ProjectWireframe_1.png** , **ProjectWireframe_2.png** , **ProjectWireframe_3.png** , **ProjectWireframe_4.png** , **ProjectWireframe_5.png** and **ProjectWireframe_6.png**
 
-My database schema can be found in the "database-schema" folder inside my images folder as **invitationsSchema.pdf**.  I created my database schema in dbdiagram.io.  
+My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitationsSchema.pdf**.  
 
 ### Page template appearance
 In the top section of every page I have a navigation bar with page destinations available to the user.  The navigation options change according to whether the user is logged in or not.  More access is granted to logged in users.  A background image of a collage of wedding invitations stretches halfway across the page where the name of the name of the site and a brief introduction underneath takes up the other half.  Underneath is a banner with the site tagline.  Then there is a footer with copyright details. 
@@ -84,9 +84,13 @@ Bootstrap "Small Business" Theme
 
 ### Media
 Invitation images from **https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR_tIoCOlskiyQXfTwCs9rQyfC41xRCTnhacUzakYqzGl0Rl3Z, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDzwDtDB5HL6C3Y-M0CCFNp3jwQxZiDv0mppAY-Hbf-s5ZyMg, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTVChEqUYRpD8p2Z5Q-6Sp9P0Hcm5YCaFZeprln5l2I6C0C6aD&reload=on, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDzwDtDB5HL6C3Y-M0CCFNp3jwQxZiDv0mppAY-Hbf-s5ZyMg, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCDDsXKAGsXG9rBCCjQM7t0jBhoW3_FZZcDJKMV0ZgoEVeRnpQ**
+
 Page header image from **https://www.weddinginvitations.org.uk/wp-content/uploads/2016/07/montage.jpg, https://www.google.com/**
+
 Carousel images from **http://cadldg.com/wp-content/uploads/2019/01/photo-collage-thank-you-cards-wedding-multi-card-personalized-template-thanks-for-invitation-online.jpg**, https://junebugweddings.com/wedding-blog/wp-content/uploads/2014/12/American-Wedding-Marketplace-Invitation-Collage.jpg**, https://i.pinimg.com/originals/a4/50/7d/a4507d7a26566dc7a792a5f0442858b5.jpg**
+
 To create my database schema, I used **dbdiagram.io**
+
 To create my wireframes I used **balsamiq**
 
 ### Acknowledgements
