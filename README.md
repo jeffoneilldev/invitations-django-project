@@ -38,7 +38,7 @@ This layout is fully responsive on mobile, medium and large screens.
 - add a "like" voting system for each invitation.
 
 ## Technologies Used
-- Django: a Python web framework for building this app.
+- Python / Django: a Python web framework for building this app.
 - Javascript: For Stripe functionality.   
 - Bootstrap (startbootstrap.com): For page layout, snippets and grid system.
 - Heroku for Postgres database and deployment.
