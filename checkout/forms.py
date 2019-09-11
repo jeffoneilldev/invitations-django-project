@@ -19,7 +19,7 @@ class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = (
-            'partner1_full_name', 'partner2_full_name', 'wedding_date', 'ceremony_address', 'phone_number',
-            'town_or_city', 'street_address1', 'street_address2',
+            'partner1_full_name', 'partner2_full_name', 'wedding_date', 'rsvp_date', 'ceremony_address', 'reception_address', 'phone_number', 'contact_email',
+            'street_address1', 'street_address2', 'town_or_city',
             'county', 'country', 'postcode'
         )
