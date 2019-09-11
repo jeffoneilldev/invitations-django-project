@@ -52,9 +52,9 @@ This layout is fully responsive on mobile, medium and large screens.
 I connected my Github repository to Travis for continuos testing.  Whenever my code updated, a new build would begin in Travis and turn green if my code passes all tests.  The Travis link at the end of this README displays the current testing status of my app.  This current build is "Passing".
 
 ### Code Validation
-- HTML 
-- CSS 
-- JAVASCRIPT 
+- HTML validated using W3C Markup Validation Service.  DOCTYPE and html tags are extended from base.html to other pages.
+- CSS was validated using Jigsaw with no errors found.
+- JAVASCRIPT was validated using JSHint.  It says I have 2 undefined variables, $ and stripe.  However, jQuery and stripe are loaded/referenced already in my checkout.html (and my base.html via head_js).
 
 **Testing as per user stories above:**
 
