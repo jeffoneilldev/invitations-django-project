@@ -24,26 +24,27 @@ This layout is fully responsive on mobile, medium and large screens.
 
 ## Features
 ### Existing Features
-- **Nav bar**: provides page selections on every page for easy navigation.
+- **Nav bar**: provides page selections on every page for easy navigation.  
 - **Home Page**: On first landing on the app, the user sees a carousel displaying wedding images and comments on what the app is about.  I have a "login" facility which allows the signed in user to access all the facilities of the app.  A new user can register their details and log in also.
 - **About Us**: Accessible from every page, this page gives details about the company and what it does.
 - **Shop! (Button)**: If logged in, clicking this button will bring the user to the products page where the user can select their desired invitation and add the amount they desire to the shopping cart.  The user MUST be logged in to access this page. 
-- **Shopping cart**: Stages the user's selections and gives the option to select more products or go to the checkout page.
-- **Checkout**: Displays the proposed order and it's amount and a form for the user to enter their payment details and submit them for payment.
-- **Customer Profile**: Displays the logged in user's details.
+- **Shopping cart**: Stages the user's selections and gives the option to select more products or go to the checkout page.  If the user is logged in, the amount of cart items the user has selected is displayed in the nav bar.  The cart can be accessed by clicking on the nav bar link.
+- **Checkout**: Displays the proposed order and it's amount.  Underneath is a form called "Your Wedding Information" for the user to enter their details.  Below that, there's another form for the user to enter their payment details and submit them for payment.
+- **Customer Profile**: Displays the logged in user's details.  I also added an "order status" where I can manually update it to let the user know the status of their order.
 - **Footer**: Displays the copyright of the app on every page.
 
 ### Features Left to Implement
-- Order status on submitted orders in the customer profile.
+- Automated order status on submitted orders in the user's customer profile.
 - add a "like" voting system for each invitation.
 
 ## Technologies Used
 - Django: a Python web framework for building this app.
 - Javascript: For Stripe functionality.   
 - Bootstrap (startbootstrap.com): For page layout, snippets and grid system.
-- Heroku Postgres database.
+- Heroku for Postgres database and deployment.
 - Whitenoise for storing static files.
-- HTML & CSS for template creation
+- HTML & CSS for template creation.
+- Stripe API for credit card payments.
 
 ## Testing
 
@@ -76,7 +77,18 @@ This app was developed in AWS Cloud 9.  I used git version control and kept all 
 
 I took the following steps to deploy my project using **Heroku**:
 - Logged in and created a new app called **invitations-django-project**
-- 
+- I selected the Postgres addon and copied the value of DATABASE_URL from config vars.
+- Back in my Terminal, I installed dj-database-url and psycopg2.
+- I imported dj_database_url into my settings.py
+- I created an env.py file to store my SECRET_KEY and DATABASE_URL and STRIPE values.
+- I cut the value of the SECRET_KEY from settings.py (replaced with os.environ.get(..)) and put it into the config vars of my Heroku app.
+- In Terminal I put ./manage.py makemigrations then migrate.
+- I installed gunicorn and created a Procfile.
+- I updated my requirements.txt file.
+- Then I added the name of my app in heroku to ALLOWED_HOSTS in settings.py.
+- Back to Heroku, Deploy, Connect to Github and connect to my repository name.
+- Manual deploy and deploy branch.  Enable automatic deploys.
+- Here is the live link to my heroku app **https://invitations-django-project.herokuapp.com/**
 
 ## Credits
 ### Content

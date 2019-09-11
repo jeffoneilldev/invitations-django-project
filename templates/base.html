@@ -34,11 +34,11 @@
             <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
             <li class="nav-item"><a class="nav-link" href="{% url 'registration' %}">Register</a></li>
             {% endif %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'view_cart' %}">
+            <li class="nav-item"><a class="nav-link" href="{% url 'view_cart' %}">Cart ( 
                 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                 {% if product_count > 0 %}
                 <label class="badge badge-warning">{{ product_count }}</label>
-                {% endif %}
+                {% endif %}items)
                 </a>
             </li>
         </ul>
