@@ -15,8 +15,8 @@
 {% block content %}
 
 <div class="container" align="center">
-    <h1 class="display-4">Checkout</h1><br>
-    <hr><br>
+    <h1 class="display-4">Checkout</h1>
+    <hr>
     <div class="row row-flex">
         
         {% for item in cart_items %}
@@ -40,19 +40,23 @@
         <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
     </div><br>
     <hr><br>
+    
+<!--Wedding Info Form and Payment Details-->
 
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-        <legend>Payment Details</legend>
+        
 
         <div id="credit-card-errors" style="display: none;">
             <div id="alert-message block-message error" id="stripe-error-message"></div>
         </div>
 
-        <div class="form-group col-md-6">
+        <h3 class="display-4">Your Wedding Information</h3><br>
+        <div class="form-group col-md-7" align="left">
             {{ order_form | as_bootstrap }}
-        </div>
+        </div><br><hr><br>
 
-        <div class="form-group col-md-6">
+        <h3 class="display-4">Payment Details</h3><br>
+        <div class="form-group col-md-5" align="left">
             {{ payment_form | as_bootstrap }}
         </div>
 

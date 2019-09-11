@@ -97,6 +97,7 @@ To create my wireframes I used **balsamiq**
 w3schools.com  
 Bootstrap docs
 Heroku docs
+Stripe API
 stackoverflow.com
 Slack  
 Code institute tutorials and Tutor support.  
