@@ -15,7 +15,7 @@ A typical user of this app would be looking for the following:
 ### Mock-ups and Database Schema
 The mock-ups I used for planning the application are in my "projectPlan" folder inside my 'static' folder under the names **ProjectWireframe_1.png** , **ProjectWireframe_2.png** , **ProjectWireframe_3.png** , **ProjectWireframe_4.png** , **ProjectWireframe_5.png** and **ProjectWireframe_6.png**
 
-My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitationsSchema.pdf**.  
+My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitations_dbSchema.pdf**.  
 
 ### Page template appearance
 In the top section of every page I have a navigation bar with page destinations available to the user.  The navigation options change according to whether the user is logged in or not.  More access is granted to logged in users.  A background image of a collage of wedding invitations stretches halfway across the page where the name of the name of the site and a brief introduction underneath takes up the other half.  Underneath is a banner with the site tagline.  Then there is a footer with copyright details. 

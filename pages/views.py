@@ -5,9 +5,6 @@ from django.contrib.auth.decorators import login_required
 from pages.forms import UserLoginForm, UserRegistrationForm
 
 # Create your views here.
-def say_hello(request):
-    #testing view
-    return HttpResponse("Hi There!")
     
 def index(request):
     #bring user to home page
