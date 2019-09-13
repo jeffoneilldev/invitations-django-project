@@ -1,6 +1,19 @@
 body {
     font-family: Arial;
     padding-top: 100px;
+    background-color: white;
+}
+
+.container2 {
+    background-color: white;
+}
+
+.container-index {
+    background-color: #fadadd;
+}
+
+.page-intro {
+    padding: 20px;
 }
 
 .btncolor {
@@ -30,13 +43,15 @@ body {
 .panel-default {
     border-color: transparent;
     padding: 25px 25px;
+    opacity: 0.8;
 }
 
 .panel-body {
     height: 100%;
-    border: 1px solid #ddd;
+    border: 10px solid #ddd;
     padding: 20px;
 }
+
 
 .product-description {
     min-height: 40px;
@@ -83,3 +98,11 @@ body {
     color: black;
 }
 
+.about-row {
+    opacity: 0.8;
+}
+
+.profile-bg {
+    
+    opacity: 0.8;
+}

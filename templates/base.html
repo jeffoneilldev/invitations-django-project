@@ -46,15 +46,15 @@
     </nav>
 
 <!-- Page Content -->
-  <div class="container" align="center">
+  <div class="container2" align="center">
 
     <!-- Heading Row -->
-    <div class="row align-items-center my-5">
-      <div class="col-lg-7">
+    <div class="row align-items-center my-5 bg-white page-intro">
+      <div class="col-lg-6">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'img/weddingmontage2.jpg' %}" alt="wedding collage pic">
       </div>
       <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <h1 class="font-weight-light display-4">Your Wedding Invitations</h1>
         <p>We provide the best wedding invitations around. From our elegant designs to our hassle-free service, we have it all. Log in to our secure site and choose the invitations for your big day!</p>
         <a class="btn btncolor text-white" href="{% url 'login' %}">Shop!</a>
@@ -64,13 +64,13 @@
     <!-- /.row -->
 
     <!-- Call to Action Well -->
-    <div class="card text-white my-5 text-center">
+    <div class="card text-white text-center">
       <div class="card-body cardbg">
         <h2 class="text-white m-0 display-5">"It's time to tell everyone about your big day!"</h2>
       </div>
     </div></div>
 
-<h1>{% block page_heading %} {% endblock %}</h1>
+
 
     {% if messages %}
     <div class="alert alert-success" role="alert" align="center">
@@ -80,8 +80,10 @@
     </div>
     {% endif %} 
     
+    <div class="container-index"><br>
     {% block content %}
     {% endblock %}
+    </div>
     
 <!-- Footer -->
   <footer class="py-5 footerbg">
