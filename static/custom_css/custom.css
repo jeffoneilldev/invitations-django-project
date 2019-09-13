@@ -3,6 +3,14 @@ body {
     padding-top: 100px;
 }
 
+.btncolor {
+    background-color: #967bb6;
+}
+
+.alert-purple {
+    background-color: #967bb6;
+}
+
 /* Product display styles */
 .product {
     background-size: contain;
@@ -66,6 +74,12 @@ body {
     font-family: script;
 }
 
+.display-amount {
+    font-family: script;
+    font-size: 30px;
+}
+
 .lead {
     color: black;
 }
+

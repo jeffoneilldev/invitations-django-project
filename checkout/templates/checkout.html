@@ -5,8 +5,8 @@
 {% block content %}
 
 <div class="container" align="center">
-    <h1 class="display-4">Checkout</h1>
-    <hr>
+    <h1 class="display-4 alert alert-purple text-white">Checkout</h1>
+    <br><hr>
     <div class="row row-flex">
         
         {% for item in cart_items %}
@@ -25,9 +25,9 @@
         {% endfor %}
     </div>
     <br><br>
-    <div class="row col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-6 alert alert-success">
-        <p class="display-4">Your total amount: €</p>
-        <p class="display-4"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+    <div class="row alert alert-purple">
+        <p class="text-white m-0 display-amount">Your total amount is: &nbsp&nbsp</p>
+        <p class="text-white m-0 display-amount"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>€{{ total }}</p>
     </div><br>
     <hr><br>
     

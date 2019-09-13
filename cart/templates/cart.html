@@ -4,6 +4,8 @@
 
 {% block content %}
 <div class="container" align="center">
+    <h1 class="display-4 alert alert-purple text-white">Your Cart</h1>
+    <br><hr>
     <div class="row row-flex">
         {% for item in cart_items %}
 
@@ -27,7 +29,7 @@
                                 <div class="input-group-addon">&nbsp(Current Qty: {{item.quantity}})&nbsp&nbsp&nbsp</div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btncolor text-white">Update</button>
                     </form>
                 </p>
             </div>
@@ -37,9 +39,9 @@
     <br>
     <hr>
     <br><br>
-    <div class="row">
-        <p class="display-4">Your total amount is €</p>
-        <p class="display-4"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}&nbsp&nbsp&nbsp</p>
+    <div class="row alert alert-purple">
+        <p class="text-white m-0 display-amount">Your total amount is: &nbsp&nbsp</p>
+        <p class="text-white m-0 display-amount"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>€{{ total }}</p>
     </div><br><br>
     <div class="row">
         <a href="{% url 'products' %}" class="btn btn-warning" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Continue Shopping?</a>&nbsp&nbsp&nbsp

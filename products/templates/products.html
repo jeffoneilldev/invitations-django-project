@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container" align="center">
-<h2 class="display-4">Choose Your Invitation.</h2><br>
+<h2 class="display-4 alert alert-purple text-white">Choose Your Invitation.</h2><br>
 <div class="row row-flex">
     {% for product in products %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow">
@@ -19,7 +19,7 @@
                     <div class="input-group">
                         <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
                         <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
+                            <button class="btn btncolor text-white" type="submit">Add</button>
                         </span>
                     </div>
                 </form><br>
