@@ -100,9 +100,23 @@ body {
 
 .about-row {
     opacity: 0.8;
+    padding: 20px;
 }
+
 
 .profile-bg {
     
     opacity: 0.8;
+}
+
+.navbar {
+    background-color: #ff69b4;
+}
+
+.cardbg {
+    background-color: #ff69b4;
+}
+
+.footerbg {
+    background-color: #ff69b4;
 }
