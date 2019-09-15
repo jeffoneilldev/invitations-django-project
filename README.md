@@ -2,13 +2,14 @@
 For my Django Full Stack Milestone Project, I have created a website called “Your Wedding Invitations”.  This website displays a variety of wedding invitation designs where the user can select the one they like and add their own wedding details to it.  They can then order and pay for their selected products through the website.  They can also register and log in to their user account at any time. 
 
 ## UX
-I want my website to have a modern wedding feel and appearance.  It will have an intuitive interface and present the information clearly on mobile devices as it does on desktop.
-A typical user of this app would be looking for the following: 
+The main demographic for this kind of website would be women in their late 20s / early 30s.  I want to appeal to this audience using a modern wedding feel with a pink and purple colour scheme for appearance.  It will have an intuitive interface and present the information clearly on mobile devices as it does on desktop.
+
+**A typical user of this app would be looking for the following: **
 
 ### User stories
 
 1. **A person not used to navigating websites** will need a simple interface for them to navigate.  They will need to know immediately what options are available to them and what the website has to offer.
-2. **A bride (or groom) to-be** would be immediately looking to see the different type/design of invitations that the site has to offer (upon landing on the page).
+2. **A bride (or groom) to-be** would be immediately looking to see the different type/design of invitations that the site has to offer and what the company is about.
 3. **A returning/registered user** will want to have secured access to the website.  They will want to clearly see what design they have selected and the price they will have to pay.  They would also like to see a their own details in a personalised profile.
 4. **A user looking for further information** will be looking for information about the company and an option to submit a query.
 
@@ -18,7 +19,7 @@ The mock-ups I used for planning the application are in my "projectPlan" folder 
 My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitations_dbSchema.pdf**.  
 
 ### Page template appearance
-In the top section of every page I have a navigation bar with page destinations available to the user.  The navigation options change according to whether the user is logged in or not.  More access is granted to logged in users.  A background image of a collage of wedding invitations stretches halfway across the page where the name of the name of the site and a brief introduction underneath takes up the other half.  Underneath is a banner with the site tagline.  Then there is a footer with copyright details. 
+In the top section of every page I have a navigation bar with page destinations available to the user.  The navigation options change according to whether the user is logged in or not.  More access is granted to logged in users.  A background image of a collage of wedding invitations stretches halfway across the page where the name of the site and a brief introduction underneath takes up the other half.  Underneath is a banner with the site tagline.  Then there is a footer with copyright details. 
 
 This layout is fully responsive on mobile, medium and large screens.
 
@@ -26,7 +27,7 @@ This layout is fully responsive on mobile, medium and large screens.
 ### Existing Features
 - **Nav bar**: provides page selections on every page for easy navigation.  
 - **Home Page**: On first landing on the app, the user sees a carousel displaying wedding images and comments on what the app is about.  I have a "login" facility which allows the signed in user to access all the facilities of the app.  A new user can register their details and log in also.
-- **About Us**: Accessible from every page, this page gives details about the company and what it does.
+- **About Us**: Accessible from every page, this page gives details about the company and what it does.  Each invitation image used on the page is a link to the 'products' page (or log in page if not logged in).
 - **Shop! (Button)**: If logged in, clicking this button will bring the user to the products page where the user can select their desired invitation and add the amount they desire to the shopping cart.  The user MUST be logged in to access this page. 
 - **Shopping cart**: Stages the user's selections and gives the option to select more products or go to the checkout page.  If the user is logged in, the amount of cart items the user has selected is displayed in the nav bar.  The cart can be accessed by clicking on the nav bar link.
 - **Checkout**: Displays the proposed order and it's amount.  Underneath is a form called "Your Wedding Information" for the user to enter their details.  Below that, there's another form for the user to enter their payment details and submit them for payment.
@@ -59,7 +60,7 @@ I connected my Github repository to Travis for continuos testing.  Whenever my c
 **Testing as per user stories above:**
 
 - **User story 1:**  Landing on the "Home" page for the first time, the inexperienced user can navigate the page easily because of the simple layout and obvious options available.
-- **User story 2:**  The bride or groom will instantly see a carousel with positive comments and images about the website.
+- **User story 2:**  The bride or groom will instantly see a carousel with positive comments and images about the website.  The 'about us' page is accessible from the nav bar.
 - **User story 3:**  The returning user can log in to their account and access all the features of the website securely.  They can also view their customer profile while logged in.
 - **User story 4:**  This user can go straight to the "About us" page for further information and an email address they can contact.
 
