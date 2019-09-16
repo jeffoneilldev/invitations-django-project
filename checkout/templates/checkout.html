@@ -6,9 +6,10 @@
 
 <div class="container" align="center">
     <h1 class="display-4 alert alert-purple text-white">Checkout</h1>
-    <br><hr>
+    <br>
+    <hr>
     <div class="row row-flex">
-        
+
         {% for item in cart_items %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow bg-white">
             <div class="panel-body">
@@ -30,11 +31,11 @@
         <p class="text-white m-0 display-amount"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>€{{ total }}</p>
     </div><br>
     <hr><br>
-    
-<!--Wedding Info Form and Payment Details-->
+
+    <!--Wedding Info Form and Payment Details-->
 
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-        
+
 
         <div id="credit-card-errors" style="display: none;">
             <div id="alert-message block-message error" id="stripe-error-message"></div>
@@ -43,7 +44,8 @@
         <h3 class="display-4">Your Wedding Information</h3><br>
         <div class="form-group col-md-7" align="left">
             {{ order_form | as_bootstrap }}
-        </div><br><hr><br>
+        </div><br>
+        <hr><br>
 
         <h3 class="display-4">Payment Details</h3><br>
         <div class="form-group col-md-5" align="left">

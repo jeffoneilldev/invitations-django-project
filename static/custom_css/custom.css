@@ -4,6 +4,7 @@ body {
     background-color: white;
 }
 
+/* main body colours */
 .container2 {
     background-color: white;
 }
@@ -12,8 +13,16 @@ body {
     background-color: #fadadd;
 }
 
-.page-intro {
-    padding: 20px;
+.navbar {
+    background-color: #ff69b4;
+}
+
+.cardbg {
+    background-color: #ff69b4;
+}
+
+.footerbg {
+    background-color: #ff69b4;
 }
 
 .btncolor {
@@ -23,6 +32,11 @@ body {
 .alert-purple {
     background-color: #967bb6;
 }
+
+.page-intro {
+    padding: 20px;
+}
+
 
 /* Product display styles */
 .product {
@@ -103,20 +117,6 @@ body {
     padding: 20px;
 }
 
-
 .profile-bg {
-    
     opacity: 0.8;
-}
-
-.navbar {
-    background-color: #ff69b4;
-}
-
-.cardbg {
-    background-color: #ff69b4;
-}
-
-.footerbg {
-    background-color: #ff69b4;
 }

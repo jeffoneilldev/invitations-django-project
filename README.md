@@ -1,10 +1,10 @@
-# Django Full Stack Milestone Project
-For my Django Full Stack Milestone Project, I have created a website called “Your Wedding Invitations”.  This website displays a variety of wedding invitation designs where the user can select the one they like and add their own wedding details to it.  They can then order and pay for their selected products through the website.  They can also register and log in to their user account at any time. 
+# "Your Wedding Invitations" Milestone Project
+For my Django Full Stack Milestone Project, I have created a website called “Your Wedding Invitations”.  This website displays a variety of wedding invitation designs where the logged-in user can select the one they like and add their own wedding details to it.  They can then order and pay for their selected products through the website.  For unregistered users, they can view the 'About us' page for information but will have to register to access further features. 
 
 ## UX
-The main demographic for this kind of website would be women in their late 20s / early 30s.  I want to appeal to this audience using a modern wedding feel with a pink and purple colour scheme for appearance.  It will have an intuitive interface and present the information clearly on mobile devices as it does on desktop.
+The main demographic for this kind of website would be women about to get married.  I want to appeal to this audience using a modern wedding feel with a pink and purple colour scheme for appearance.  It will have an intuitive interface and present the information clearly on mobile devices as it does on desktop.
 
-**A typical user of this app would be looking for the following: **
+A typical user of this app would be looking for the following: 
 
 ### User stories
 
