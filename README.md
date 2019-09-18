@@ -14,9 +14,9 @@ A typical user of this app would be looking for the following:
 4. **A user looking for further information** will be looking for information about the company and an option to submit a query.
 
 ### Mock-ups and Database Schema
-The mock-ups I used for planning the application are in my "projectPlan" folder inside my 'static' folder under the names **ProjectWireframe_1.png** , **ProjectWireframe_2.png** , **ProjectWireframe_3.png** , **ProjectWireframe_4.png** , **ProjectWireframe_5.png** and **ProjectWireframe_6.png**
+The mock-ups I used for planning the application are in my "projectPlan" folder inside my 'static' folder under the names **ProjectWireframe_1.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_1.png), **ProjectWireframe_2.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_2.png), **ProjectWireframe_3.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_3.png), **ProjectWireframe_4.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_4.png), **ProjectWireframe_5.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_5.png) and **ProjectWireframe_6.png** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/ProjectWireframe_6.png).
 
-My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitations_dbSchema.pdf**.  
+My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitations_dbSchema.pdf** (https://github.com/jeffoneilldev/invitations-django-project/static/projectPlan/invitations_dbSchema.pdf).  
 
 ### Page template appearance
 In the top section of every page I have a navigation bar with page destinations available to the user.  The navigation options change according to whether the user is logged in or not.  More access is granted to logged in users.  A background image of a collage of wedding invitations stretches halfway across the page where the name of the site and a brief introduction underneath takes up the other half.  Underneath is a banner with the site tagline.  Then there is a footer with copyright details. 
@@ -90,6 +90,14 @@ I took the following steps to deploy my project using **Heroku**:
 - Back to Heroku, Deploy, Connect to Github and connect to my repository name.
 - Manual deploy and deploy branch.  Enable automatic deploys.
 - Here is the live link to my heroku app **https://invitations-django-project.herokuapp.com/**
+
+To clone my Github repository to another local repository...
+- Go to my repository in Github and click on the "clone or download" button.
+- Copy the URL in the "Clone with HTTPs" section.
+- Go to the IDE you are using and open your terminal.
+- Change your current working directory to the location where you want to put the cloned directory.
+- in your terminal, type **git clone** followed by the URL you copied from the "Clone with HTTPs" section above and press **Enter**.
+- Your local repository will then be created.
 
 ## Credits
 ### Content
