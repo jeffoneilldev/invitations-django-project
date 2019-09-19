@@ -120,3 +120,8 @@ body {
 .profile-bg {
     opacity: 0.8;
 }
+
+.table {
+    padding: 10px;
+    padding-top: 20px;
+}

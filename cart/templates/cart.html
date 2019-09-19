@@ -3,38 +3,59 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+
 <div class="container" align="center">
     <h1 class="display-4 alert alert-purple text-white">Your Cart</h1>
     <br><hr>
+    
+    
     <div class="row row-flex">
-        {% for item in cart_items %}
-
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default border-0 shadow bg-white">
-
-            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-            <br>
-            <div class="caption">
-                <h3>{{ item.product.name }}</h3>
-                <p class="product-description">{{ item.product.description }}</p>
-                <p>€{{ item.product.price }} each</p>
-                 <p>
-                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label for="exampleInputAmount" class="sr-only">Quantity</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">Qty&nbsp</div>
-                                <input name="quantity" type="number" min="0" max="999" class="form-control">
-                                <div class="input-group-addon">&nbsp(Current Qty: {{item.quantity}})&nbsp&nbsp&nbsp</div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btncolor text-white">Update</button>
-                    </form>
-                </p>
-            </div>
-        </div>
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Product</th>
+                            <th scope="col" class="text-left">Quantity</th>
+                            <th scope="col-sm-6" class="text-left">Price&nbsp&nbsp&nbsp</th>
+                            <th scope="col-sm-6" class="text-left">Change Qty </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in cart_items %}
+                        <tr>
+                            <td><div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div></td>
+                            <td><br><br><br>{{ item.product.name }}</td>
+                            <td><br><br><br><p class="form-control" type="text">{{item.quantity}}</p></td>
+                            <td class="text-left"><br><br><br>€{{ item.product.price }}</td>
+                            <td class="text-right"><br><br><br>
+                                <div>
+                                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <label for="exampleInputAmount" class="sr-only">Quantity</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">Qty&nbsp</div>
+                                                <input name="quantity" type="number" min="0" max="999" class="form-control" required>
+                                                <div class="input-group-addon">&nbsp({{item.quantity}})&nbsp&nbsp&nbsp</div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btncolor text-white">Update</button>
+                                    </form>
+                                  </div>
+                            </td>
+                          </tr>
+                       </tbody>
+           
+        
         {% endfor %}
+    
+    </table>
+      </div>
+     </div>
     </div>
+    
     <br>
     <hr>
     <br><br>

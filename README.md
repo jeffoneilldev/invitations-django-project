@@ -67,6 +67,7 @@ I connected my Github repository to Travis for continuos testing.  Whenever my c
 **Other Testing...**
 
 - All buttons and links have been tested and they all go to their desired destinations.
+- After testing the 'Add' button on the 'products' page and the 'update' button on the 'cart' page, I had to add 'required' on the input lines to prevent an error page appearing if the user clicked on these buttons without entering a quantity.
 - Made sure that product, cart and checkout pages are restricted to logged in users only.
 - The "User Registration" form works as it should.  When the user enters their details, they are brought to the products page. 
 - Payment form for submitting credit card details to stripe was fully tested and is currently failing to accept payment.
