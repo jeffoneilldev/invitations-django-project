@@ -29,8 +29,8 @@ This layout is fully responsive on mobile, medium and large screens.
 - **Home Page**: On first landing on the app, the user sees a carousel displaying wedding images and comments on what the app is about.  I have a "login" facility which allows the signed in user to access all the facilities of the app.  A new user can register their details and log in also.
 - **About Us**: Accessible from every page, this page gives details about the company and what it does.  Each invitation image used on the page is a link to the 'products' page (or log in page if not logged in).
 - **Shop! (Button)**: If logged in, clicking this button will bring the user to the products page where the user can select their desired invitation and add the amount they desire to the shopping cart.  The user MUST be logged in to access this page. 
-- **Shopping cart**: Stages the user's selections and gives the option to select more products or go to the checkout page.  If the user is logged in, the amount of cart items the user has selected is displayed in the nav bar.  The cart can be accessed by clicking on the nav bar link.
-- **Checkout**: Displays the proposed order and it's amount.  Underneath is a form called "Your Wedding Information" for the user to enter their details.  Below that, there's another form for the user to enter their payment details and submit them for payment.
+- **Shopping cart**: Stages the user's selections (in a horizontal layout) and gives the option to select more products or go to the checkout page.  If the user is logged in, the amount of cart items the user has selected is displayed in the nav bar.  The cart can be accessed by clicking on the nav bar link.
+- **Checkout**: Displays the proposed order and it's amount (also in a horizontal layout).  Underneath is a form called "Your Wedding Information" for the user to enter their details.  Below that, there's another form for the user to enter their payment details and submit them for payment.
 - **Customer Profile**: Displays the logged in user's details.  I also added an "order status" where I can manually update it to let the user know the status of their order.
 - **Footer**: Displays the copyright of the app on every page.
 
@@ -118,6 +118,8 @@ To create my wireframes I used **balsamiq**
 ### Acknowledgements
 w3schools.com  
 Bootstrap docs
+bootsnipp.com
+startbootstrap.com
 Heroku docs
 Stripe API
 stackoverflow.com
