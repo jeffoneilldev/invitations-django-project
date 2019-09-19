@@ -15,11 +15,16 @@ A typical user of this app would be looking for the following:
 
 ### Mock-ups and Database Schema
 The mock-ups I used for planning the application are in my "projectPlan" folder inside my 'static' folder under the following names:  
-**ProjectWireframe_1.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_1.png), 
-**ProjectWireframe_2** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_2.png), 
-**ProjectWireframe_3.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_3.png), 
-**ProjectWireframe_4.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_4.png), 
+**ProjectWireframe_1.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_1.png)
+
+**ProjectWireframe_2** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_2.png)
+
+**ProjectWireframe_3.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_3.png)
+
+**ProjectWireframe_4.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_4.png)
+
 **ProjectWireframe_5.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_5.png) and 
+
 **ProjectWireframe_6.png** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/ProjectWireframe_6.png).
 
 My database schema can be found in my "projectPlan" folder inside my 'static' folder as **invitations_dbSchema.pdf** (https://github.com/jeffoneilldev/invitations-django-project/blob/master/static/projectPlan/invitations_dbSchema.pdf).  
@@ -129,6 +134,7 @@ startbootstrap.com
 Heroku docs
 Stripe API
 stackoverflow.com
+Udemy "Python Django Dev" tutorial
 Slack  
 Code institute tutorials and Tutor support.  
 My code institute mentor **Maranatha Ilesanmi** for advice throughout the project.
